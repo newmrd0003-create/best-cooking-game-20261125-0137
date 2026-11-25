@@ -1,0 +1,23 @@
+/* Ember & Order — page chrome around the canvas. The game itself is drawn
+   on the canvas by kitchen.js; this file only centers it on a warm backdrop. */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #1c110a; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #f3e2c7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap { padding: 12px; text-align: center; }
+canvas {
+  display: block;
+  width: min(1280px, 96vw);
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  background: #4a2c1a;
+}
+.hint { margin: 10px 0 0; font-size: 13px; color: #b9a98f; }
